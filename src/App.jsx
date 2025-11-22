@@ -1,35 +1,54 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState } from 'react';
+import { Menu } from 'lucide-react';
+import { SITE_DATA } from './data/data';
 
-function App() {
-  const [count, setCount] = useState(0)
+// Import Components
+import Sidebar from './components/Sidebar';
+import Home from './pages/Home';
+import Projects from './pages/Projects';
+import Resume from './pages/Resume';
+// import Papers from './pages/Papers';
+
+const App = () => {
+  const [activeTab, setActiveTab] = useState('home');
+  const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
+
+  const renderContent = () => {
+    switch (activeTab) {
+      case 'home': return <Home />;
+      case 'projects': return <Projects />;
+      case 'resume': return <Resume />;
+      // case 'papers': return <Papers />;
+      default: return <Home />;
+    }
+  };
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
+    <div className="flex min-h-screen bg-slate-50 font-sans text-slate-900">
+      {/* Mobile Header */}
+      <div className="md:hidden fixed top-0 w-full bg-background-dark text-white z-20 px-4 py-3 flex items-center justify-between shadow-md">
+        <span className="font-bold text-lg">{SITE_DATA.name}</span>
+        <button onClick={() => setIsMobileNavOpen(true)} className="text-background-light hover:text-secondary">
+          <Menu size={24} />
         </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
 
-export default App
+      {/* Sidebar Navigation */}
+      <Sidebar 
+        activeTab={activeTab} 
+        setActiveTab={setActiveTab} 
+        isOpen={isMobileNavOpen} 
+        setIsOpen={setIsMobileNavOpen} 
+      />
+
+      {/* Main Content Area */}
+      <main className="flex-1 md:ml-0 transition-all duration-300 pt-16 md:pt-0 h-screen overflow-y-auto">
+        <div className="max-w-7xl mx-auto p-6 md:p-12 lg:p-16 min-h-full">
+          {renderContent()}
+        </div>
+      </main>
+    </div>
+  );
+};
+
+export default App;
