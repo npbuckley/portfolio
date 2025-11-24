@@ -73,7 +73,7 @@ const Home = () => (
       </div>
       
 
-      <div className="flex gap-4">
+      <div className="flex flex-wrap gap-4">
         <a href={SITE_DATA.socials.email}>
           <button className="bg-background-dark hover:bg-background-dark/80 text-background-light px-6 py-3 rounded-lg font-medium transition-colors flex items-center">
             Contact Me <Mail size={18} className="ml-2" />

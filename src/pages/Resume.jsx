@@ -56,7 +56,7 @@ const Resume = () => (
         </div>
 
         <div className="bg-background-light p-6 rounded-xl border border-slate-200 shadow-sm">
-          <h3 className="text-xl font-bold text-slate-900 mb-4">Technical Skills</h3>
+          <h3 className="text-xl font-bold text-slate-900 mb-4">All Technical Skills</h3>
           <div>
             <h2 className="text-md md:text-md font-extrabold text-slate-900 mb-2 leading-tight">
               Languages

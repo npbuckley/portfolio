@@ -22,7 +22,9 @@ export const PROJECTS = [
     id: 1,
     title: "Charity Quest Hour Match",
     summary: "Designed and developed a donation feature for the small business Charity Quest using the Stripe API.",
-    description: "• Developed a new feature allowing donors to pledge donations to a charity based on volunteer hours completed during a specified time frame.\n• Implemented a secure payment processing system using the Stripe API for seamless and reliable transactions.\n• Executed the full-stack implementation with a small team, including frontend design, backend logic and database management.",
+    points: ["Developed a new feature allowing donors to pledge donations to a charity based on volunteer hours completed during a specified time frame.",
+            ,"Implemented a secure payment processing system using the Stripe API for seamless and reliable transactions."
+            ,"Executed the full-stack implementation with a small team, including frontend design, backend logic and database management."],
     tags: ["Typescript", "Vue3", "GraphQL", "Stripe API"],
     link: "https://charityquest.io",
     github: null
@@ -31,7 +33,8 @@ export const PROJECTS = [
     id: 2,
     title: "CUDA Ocean Simulation",
     summary: "An implementation of Tessendorf's Simulating Ocean Water using the Fast Fourier Transform (FFT). Created in Visual Studio 2022 using CUDA and OpenGL.",
-    description: "• Implemented a real-time ocean simulation utilizing CUDA for parallel computation of wave dynamics and OpenGL for rendering realistic water surfaces.\n• Optimized wave calculations and rendering processes, achieving significant performance improvements over CPU-based simulations.",
+    points: ["Implemented a real-time ocean simulation utilizing CUDA for parallel computation of wave dynamics and OpenGL for rendering realistic water surfaces."
+            ,"Optimized wave calculations and rendering processes, achieving significant performance improvements over CPU-based simulations."],
     tags: ["C++", "CUDA", "OpenGL"],
     link: null,
     github: "https://github.com/npbuckley/CUDAOceanSimulation"
@@ -40,7 +43,8 @@ export const PROJECTS = [
     id: 3,
     title: "LEG to ARM Converter",
     summary: "A converter from the imaginary assembly language LEG to runnable ARM assembly.",
-    description: "• Engineered a converter to translate the education LEG assembly language into executable ARM assembly.\n• Collaborated with faculty to plan the converter and integrate it into course materials.",
+    points: ["Engineered a converter to translate the education LEG assembly language into executable ARM assembly."
+            ,"Collaborated with faculty to plan the converter and integrate it into course materials."],
     tags: ["Python", "ARM Assembly", "Bash"],
     link: null,
     github: "https://github.com/npbuckley/LegToArmConverter"
@@ -53,28 +57,44 @@ export const EXPERIENCE = [
     role: "Engineer I - Security Engineering",
     company: "Verizon",
     period: "Jun 2025 - Present",
-    description: "• Designed and developed end-to-end enhancements for Verizon's legal compliance infrastructure, including database design, backend logic, and frontend integration.\n• Deployed a Google Gemini agent to parse legal documents, automatically extracting features into JSON for automation.\n• Developed a portal using React and ASP.NET, utilizing a Python background runner to handle the asynchronous queuing of sensitive records.\n• Designed a periodic NLET verification workflow to automate identity verification and agency registration."
+    points: ["Designed and developed end-to-end enhancements for Verizon's legal compliance infrastructure, including database design, backend logic, and frontend integration."
+            ,"Deployed a Google Gemini agent to parse legal documents, automatically extracting features into JSON for automation."
+            ,"Developed a portal using React and ASP.NET, utilizing a Python background runner to handle the asynchronous queuing of sensitive records."
+            ,"Designed a periodic NLET verification workflow to automate identity verification and agency registration."],
+    tags: ["Google Gemini API", "React", "Python", "ASP.Net Core", "MSSQL", "C#"]
   },
   {
     id: 2,
     role: "Course Assistance (Computer Science Department)",
     company: "Stevens Institute of Technology",
     period: "Aug 2022 - Dec 2024",
-    description: "• Selected to be a course assistant for seven different Computer Science courses, including Data Structures, Algorithms, and Systems Programming. • Designed and presented midterm and final review sessions for audiences of 200+ students. • Directed weekly labs for groups of about 20 students, teaching new topics and assisting with assignments. • Hosted weekly office hours to troubleshoot student code and explain lecture material in more detail. • Graded student exams and code submissions on correctness, efficiency, style."
+    points: ["Selected to be a course assistant for seven different Computer Science courses, including Data Structures, Algorithms, and Systems Programming."
+            ,"Designed and presented midterm and final review sessions for audiences of 200+ students."
+            ,"Directed weekly labs for groups of about 20 students, teaching new topics and assisting with assignments."
+            ,"Hosted weekly office hours to troubleshoot student code and explain lecture material in more detail.",
+            ,"Graded student exams and code submissions on correctness, efficiency, style."],
+    tags: ["Python", "C++", "C", "Bash", "Java"]
   },
   {
     id: 3,
     role: "Corporate Security Intern - Global Corporate Security Technologies Team",
     company: "Verizon",
     period: "Summers 2023 & 2024",
-    description: " Engineered a C# library to extract and label over a dozen types of critical information from PDF documents using NLP, regular expressions. • Integrated the library with a production SQL database to enable real-time retrievals of PDF text for analysis. • Developed a real-time dashboard for the All Hazards Security Operations team, reducing data retrievals times from 10+ minutes. • Wrote optimized stored procedures to aggregate employee location data from 6 sources during an active threat."
+    points: ["Engineered a C# library to extract and label over a dozen types of critical information from PDF documents using NLP, regular expressions."
+            ,"Integrated the library with a production SQL database to enable real-time retrievals of PDF text for analysis."
+            ,"Developed a real-time dashboard for the All Hazards Security Operations team, reducing data retrievals times from 10+ minutes."
+            ,"Wrote optimized stored procedures to aggregate employee location data from 6 sources during an active threat."],
+    tags: ["SpaCy", "C#", "MSSQL", "ASP.NET Razor Pages", "Bootstrap5"]
   },
   {
     id: 4,
     role: "Founder & Load Software Developer",
     company: "Square Lion",
     period: "Jun 2021 - Present",
-    description: "• Designed, developed, and launched 9 original games for iOS, Android, macOS, Windows, and Linux. • Developed the company website from scratch to optimize performance. • Planned and executed all business functions, including development, media content, and social media presence."
+    points: ["Designed, developed, and launched 9 original games for iOS, Android, macOS, Windows, and Linux."
+            ,"Developed the company website from scratch to optimize performance."
+            ,"Planned and executed all business functions, including development, media content, and social media presence."],
+    tags: ["C#", "Unity", "Godot", "Python", "HTML/CSS", "JavaScript"]
   },
 ];
 

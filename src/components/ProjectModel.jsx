@@ -40,9 +40,7 @@ const ProjectModal = ({selectedProject, onClose}) => {
 					</div>
 
 					<div className="prose prose-slate max-w-none">
-						<p className="text-lg text-slate-900 leading-relaxed mb-6" style={{whiteSpace: "pre-wrap"}}>
-							{ selectedProject.description }
-						</p>
+						{selectedProject.points.map((p) => <li><p className="text-lg text-slate-900 leading-relaxed mb-6">{p}</p></li>)}
 					</div>
 
 					{selectedProject.tags &&
