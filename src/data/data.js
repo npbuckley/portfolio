@@ -12,8 +12,9 @@ export const SITE_DATA = {
     languages: ["Python", "TypeScript", "C#", "SQL", "GraphQL", "C++", "Java", "JavaScript", "HTML/CSS", "Bash", "CUDA", "C", "ARM", "LaTeX"],
     frontend: ["React", "Vue3", "Vite", "Bootstrap5", "Razor Pages"],
     backend: ["Node.js", "ASP.NET", "Python"],
-    databases: ["MSSQL", "MySQL", "Cassandra"],
-    other: ["AWS", "Google Gemini API", "Git", "Stripe API", "SpaCy", "OpenGL", "Godot", "Unity"]
+    databases: ["MSSQL", "PostreSQL", "Cassandra"],
+    cloud: ["AWS", "Google Gemini API"],
+    tools: ["Git", "Stripe API", "Docker", "Jenkins"],
   }
 };
 

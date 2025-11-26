@@ -1,6 +1,6 @@
 import { User, Code, FileText, Github, Linkedin, Mail, X, Download, ExternalLink } from 'lucide-react';
 import { SITE_DATA } from '../data/data';
-import RESUME from '../files/Resume.pdf';
+import RESUME from '../files/NicholasBuckleyResume.pdf';
 
 const Sidebar = ({ activeTab, setActiveTab, isOpen, setIsOpen }) => {
   const navItems = [

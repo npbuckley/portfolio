@@ -4,11 +4,11 @@ import { EXPERIENCE, EDUCATION, SITE_DATA } from '../data/data';
 import ExperienceCard from '../components/ExperienceCard';
 import EducationCard from '../components/EducationCard';
 import SkillCard from '../components/SkillCard';
-import RESUME from '../files/Resume.pdf';
+import RESUME from '../files/NicholasBuckleyResume.pdf';
 
 const Resume = () => (
   <div className="animate-fade-in max-w-6xl">
-    <SectionTitle title="Resume"/>
+    <SectionTitle title="Resume" />
 
     <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
       {/* Main Content (Experience) */}
@@ -61,7 +61,7 @@ const Resume = () => (
             <h2 className="text-md md:text-md font-extrabold text-slate-900 mb-2 leading-tight">
               Languages
             </h2>
-            <div className="flex flex-wrap gap-3 mb-10">
+            <div className="flex flex-wrap gap-2 mb-5">
               {SITE_DATA.skills.languages.map(skill => (<SkillCard skill={skill} />))}
             </div>
           </div>
@@ -70,7 +70,7 @@ const Resume = () => (
             <h2 className="text-md md:text-md font-extrabold text-slate-900 mb-2 leading-tight">
               Frontend
             </h2>
-            <div className="flex flex-wrap gap-3 mb-10">
+            <div className="flex flex-wrap gap-2 mb-5">
               {SITE_DATA.skills.frontend.map(skill => (<SkillCard skill={skill} />))}
             </div>
           </div>
@@ -79,7 +79,7 @@ const Resume = () => (
             <h2 className="text-md md:text-md font-extrabold text-slate-900 mb-2 leading-tight">
               Backend
             </h2>
-            <div className="flex flex-wrap gap-3 mb-10">
+            <div className="flex flex-wrap gap-2 mb-5">
               {SITE_DATA.skills.backend.map(skill => (<SkillCard skill={skill} />))}
             </div>
           </div>
@@ -88,17 +88,26 @@ const Resume = () => (
             <h2 className="text-md md:text-md font-extrabold text-slate-900 mb-2 leading-tight">
               Databases
             </h2>
-            <div className="flex flex-wrap gap-3 mb-10">
+            <div className="flex flex-wrap gap-2 mb-5">
               {SITE_DATA.skills.databases.map(skill => (<SkillCard skill={skill} />))}
             </div>
           </div>
 
           <div>
             <h2 className="text-md md:text-md font-extrabold text-slate-900 mb-2 leading-tight">
-              Other
+              Cloud
             </h2>
-            <div className="flex flex-wrap gap-3 mb-10">
-              {SITE_DATA.skills.other.map(skill => (<SkillCard skill={skill} />))}
+            <div className="flex flex-wrap gap-2 mb-5">
+              {SITE_DATA.skills.cloud.map(skill => (<SkillCard skill={skill} />))}
+            </div>
+          </div>
+
+          <div>
+            <h2 className="text-md md:text-md font-extrabold text-slate-900 mb-2 leading-tight">
+              Tools
+            </h2>
+            <div className="flex flex-wrap gap-2 mb-5">
+              {SITE_DATA.skills.tools.map(skill => (<SkillCard skill={skill} />))}
             </div>
           </div>
         </div>

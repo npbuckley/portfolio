@@ -1,6 +1,6 @@
 import { Terminal, Mail, Download, ExternalLink } from 'lucide-react';
 import { SITE_DATA } from '../data/data';
-import RESUME from '../files/Resume.pdf';
+import RESUME from '../files/NicholasBuckleyResume.pdf';
 import SkillCard from '../components/SkillCard';
 
 const Home = () => (
@@ -31,7 +31,7 @@ const Home = () => (
         <h2 className="text-md md:text-md font-extrabold text-slate-900 mb-2 leading-tight">
           Languages
         </h2>
-        <div className="flex flex-wrap gap-3 mb-10">
+        <div className="flex flex-wrap gap-2 mb-5">
           {SITE_DATA.skills.languages.map(skill => (<SkillCard skill={skill}/>))}
         </div>
       </div>
@@ -40,7 +40,7 @@ const Home = () => (
         <h2 className="text-md md:text-md font-extrabold text-slate-900 mb-2 leading-tight">
           Frontend
         </h2>
-        <div className="flex flex-wrap gap-3 mb-10">
+        <div className="flex flex-wrap gap-2 mb-5">
           {SITE_DATA.skills.frontend.map(skill => (<SkillCard skill={skill}/>))}
         </div>
       </div>
@@ -49,7 +49,7 @@ const Home = () => (
         <h2 className="text-md md:text-md font-extrabold text-slate-900 mb-2 leading-tight">
           Backend
         </h2>
-        <div className="flex flex-wrap gap-3 mb-10">
+        <div className="flex flex-wrap gap-2 mb-5">
           {SITE_DATA.skills.backend.map(skill => (<SkillCard skill={skill}/>))}
         </div>
       </div>
@@ -58,22 +58,31 @@ const Home = () => (
         <h2 className="text-md md:text-md font-extrabold text-slate-900 mb-2 leading-tight">
           Databases
         </h2>
-        <div className="flex flex-wrap gap-3 mb-10">
+        <div className="flex flex-wrap gap-2 mb-5">
           {SITE_DATA.skills.databases.map(skill => (<SkillCard skill={skill}/>))}
         </div>
       </div>
 
       <div>
         <h2 className="text-md md:text-md font-extrabold text-slate-900 mb-2 leading-tight">
-          Other
+          Cloud
         </h2>
-        <div className="flex flex-wrap gap-3 mb-10">
-          {SITE_DATA.skills.other.map(skill => (<SkillCard skill={skill}/>))}
+        <div className="flex flex-wrap gap-2 mb-5">
+          {SITE_DATA.skills.cloud.map(skill => (<SkillCard skill={skill}/>))}
+        </div>
+      </div>
+
+      <div>
+        <h2 className="text-md md:text-md font-extrabold text-slate-900 mb-2 leading-tight">
+          Tools
+        </h2>
+        <div className="flex flex-wrap gap-2 mb-5">
+          {SITE_DATA.skills.tools.map(skill => (<SkillCard skill={skill}/>))}
         </div>
       </div>
       
 
-      <div className="flex flex-wrap gap-4">
+      <div className="flex flex-wrap gap-4 mt-10">
         <a href={SITE_DATA.socials.email}>
           <button className="bg-background-dark hover:bg-background-dark/80 text-background-light px-6 py-3 rounded-lg font-medium transition-colors flex items-center">
             Contact Me <Mail size={18} className="ml-2" />
